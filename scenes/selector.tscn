@@ -1,0 +1,18 @@
+[gd_scene format=3 uid="uid://b8alhu20038x5"]
+
+[node name="Simulation" type="Node2D" unique_id=970806331]
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=711396982]
+offset_right = 1152.0
+offset_bottom = 640.0
+color = Color(0.1728327, 0.17283267, 0.17283267, 1)
+
+[node name="Label" type="Label" parent="." unique_id=1211136962]
+offset_left = 220.0
+offset_top = 128.0
+offset_right = 931.0
+offset_bottom = 211.0
+theme_override_font_sizes/font_size = 60
+text = "Choose Genetic Modifier"
+horizontal_alignment = 1
+vertical_alignment = 1
