@@ -1,3 +1,31 @@
 [gd_scene format=3 uid="uid://c4tddq8g00gr5"]
 
+[ext_resource type="Script" uid="uid://cfc18eld8lc42" path="res://scenes/title.gd" id="1_4ignj"]
+
 [node name="Title" type="Node2D" unique_id=636298839]
+script = ExtResource("1_4ignj")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=531168322]
+offset_right = 1152.0
+offset_bottom = 640.0
+color = Color(0.20194331, 0.33530024, 0.15027487, 1)
+
+[node name="Label" type="Label" parent="." unique_id=2128409549]
+offset_left = 155.0
+offset_top = 120.0
+offset_right = 997.0
+offset_bottom = 208.0
+theme_override_font_sizes/font_size = 64
+text = "Mendelian Genetics"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Button" type="Button" parent="." unique_id=1233624545]
+offset_left = 320.0
+offset_top = 296.0
+offset_right = 832.0
+offset_bottom = 400.0
+theme_override_font_sizes/font_size = 50
+text = "Play"
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
