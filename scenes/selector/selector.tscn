@@ -1,0 +1,46 @@
+[gd_scene format=3 uid="uid://b8alhu20038x5"]
+
+[ext_resource type="Script" uid="uid://cm8blj2jxfthv" path="res://scenes/selector/selector.gd" id="1_wvknu"]
+
+[node name="Simulation" type="Node2D" unique_id=970806331]
+script = ExtResource("1_wvknu")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=711396982]
+offset_right = 1152.0
+offset_bottom = 640.0
+color = Color(0.1728327, 0.17283267, 0.17283267, 1)
+
+[node name="Label" type="Label" parent="." unique_id=1211136962]
+offset_left = 220.0
+offset_top = 128.0
+offset_right = 931.0
+offset_bottom = 211.0
+theme_override_font_sizes/font_size = 60
+text = "Choose Genetic Modifier"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Button" type="Button" parent="." unique_id=467386338]
+offset_left = 198.0
+offset_top = 264.0
+offset_right = 362.0
+offset_bottom = 514.0
+text = "test"
+
+[node name="Button2" type="Button" parent="." unique_id=1761771825]
+offset_left = 504.0
+offset_top = 271.0
+offset_right = 668.0
+offset_bottom = 521.0
+text = "test"
+
+[node name="Button3" type="Button" parent="." unique_id=230241876]
+offset_left = 823.0
+offset_top = 258.0
+offset_right = 987.0
+offset_bottom = 508.0
+text = "test"
+
+[connection signal="pressed" from="Button" to="." method="_on_button1_pressed"]
+[connection signal="pressed" from="Button2" to="." method="_on_button_2_pressed"]
+[connection signal="pressed" from="Button3" to="." method="_on_button_3_pressed"]
