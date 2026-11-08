@@ -1,0 +1,9 @@
+[gd_scene format=3 uid="uid://dgb3sm0yf18mk"]
+
+[node name="Creature" type="Node2D" unique_id=1552183404]
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=2140263792]
+offset_left = -20.0
+offset_top = -19.0
+offset_right = 20.0
+offset_bottom = 21.0

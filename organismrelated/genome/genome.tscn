@@ -1,0 +1,6 @@
+[gd_scene format=3 uid="uid://bc10bu7uicrvd"]
+
+[ext_resource type="Script" uid="uid://cq8lxtpsr5oue" path="res://organismrelated/genome/genome.gd" id="1_gxjy2"]
+
+[node name="Genome" type="Node2D" unique_id=228844167]
+script = ExtResource("1_gxjy2")
