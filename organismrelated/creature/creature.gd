@@ -4,7 +4,7 @@ class_name Creature
 var gene: Genome
 var generation: int
 
-@export var creature_scene: PackedScene
+const creature_scene = preload("res://organismrelated/creature/creature.tscn")
 
 func create(genome: Genome, gen: int):
 	gene = genome
@@ -16,6 +16,6 @@ func _process(delta: float) -> void:
 	position.x += gene.speed * delta
 
 func spawn(genome: Genome) -> void:
-	var critter = creature_scene.instantiate()
+	var critter = creature_scene.instantiate() #fix!
 	critter.create(genome, Gamemanager,generation)
 	add_child(critter)
