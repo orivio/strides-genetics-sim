@@ -18,6 +18,5 @@ func _on_button_3_pressed() -> void:
 	Gamemanager.selected_genes.append(button_genes[2])
 
 func _process(delta: float) -> void:
-	print(Gamemanager.selected_genes)
 	if len(Gamemanager.selected_genes) == 3:
 		get_tree().change_scene_to_file("res://scenes/game/game.tscn")
